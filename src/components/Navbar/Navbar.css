@@ -1,0 +1,151 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+.navbar-desktop-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0 2rem;
+}
+
+.link {
+  margin: 0 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links a:hover {
+  color: var(--color-soft-red);
+}
+
+.login-button {
+  color: white;
+  background-color: var(--color-soft-red);
+  padding: 10px;
+  width: 100px;
+  outline: 2px solid white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  outline: 2px solid var(--color-soft-red);
+  background-color: white;
+  color: var(--color-soft-red);
+}
+
+.navbar-mobile-menu {
+  display: none;
+}
+
+.navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--color-very-dark-blue);
+  opacity: 0.9;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-mobile-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+.close-menu {
+  cursor: pointer;
+  height: 20px;
+  height: 20px;
+}
+
+.navbar-mobile-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.navbar-mobile-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  width: 90%;
+  text-align: center;
+}
+
+.mobile-link {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-grayisch-blue);
+}
+
+.mobile-link:first-child {
+  border-top: 1px solid var(--color-grayisch-blue);
+}
+
+.mobile-login-button {
+  margin: 2rem auto;
+  width: 80%;
+  background-color: var(--color-very-dark-blue);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  opacity: 0.9;
+  outline: none;
+  border: 3px solid white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-mobile-socials {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-mobile-socials img {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    justify-content: space-between;
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-desktop-links {
+    display: none;
+  }
+
+  .navbar-mobile-menu {
+    display: flex;
+  }
+}
