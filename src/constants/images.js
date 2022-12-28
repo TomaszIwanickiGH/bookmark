@@ -10,6 +10,7 @@ import tab2 from '../assets/illustration-features-tab-2.svg'
 import tab3 from '../assets/illustration-features-tab-3.svg'
 import hero from '../assets/illustration-hero.svg'
 import logoBookmark from '../assets/logo-bookmark.svg'
+import logoBookmarkMobile from '../assets/logo-bookmark-mobile.svg'
 import logoChrome from '../assets/logo-chrome.svg'
 import logoFirefox from '../assets/logo-firefox.svg'
 import logoOpera from '../assets/logo-opera.svg'
@@ -27,6 +28,7 @@ export default {
   tab3,
   hero,
   logoBookmark,
+  logoBookmarkMobile,
   logoChrome,
   logoFirefox,
   logoOpera,
