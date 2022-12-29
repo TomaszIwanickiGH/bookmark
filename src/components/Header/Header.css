@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  margin: 5rem 0 6rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+
+  width: 40%;
+}
+
+.header-title {
+  margin: 1.5rem 0;
+  font-size: 40px;
+  width: 60%;
+}
+
+.header-description {
+  color: var(--color-grayisch-blue);
+  margin-bottom: 2rem;
+  line-height: 1.6rem;
+  width: 70%;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-chrome-button {
+  background-color: var(--color-soft-blue);
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.header-chrome-button:hover {
+  background-color: #fff;
+  color: var(--color-soft-blue);
+  border: 2px solid var(--color-soft-blue);
+  cursor: pointer;
+}
+
+.header-firefox-button {
+  background-color: rgb(252, 249, 249);
+  color: #000;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.header-firefox-button:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.header-image {
+  width: 40%;
+}
+
+.header-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header-image {
+    order: 1;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .header-content {
+    order: 2;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-description {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: -1rem;
+    width: 100%;
+  }
+
+  .header-description {
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .header-buttons {
+    justify-content: center;
+  }
+
+  .header-image {
+    width: 100%;
+  }
+
+  .header-content {
+    width: 100%;
+  }
+}
