@@ -4,14 +4,27 @@ import { images } from '../../constants'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const [display, setDisplay] = useState(true)
+
+  const toggle = () => {
+    setDisplay(false)
+    setToggleMenu(true)
+  }
+
+  const toggleBack = () => {
+    setDisplay(true)
+    setToggleMenu(false)
+  }
 
   return (
     <div className="navbar" id="navbar">
-      <div className="navbar-logo">
-        <a href="#navbar">
-          <img src={images.logoBookmark} alt="logo" />
-        </a>
-      </div>
+      {display && (
+        <div className="navbar-logo">
+          <a href="#navbar">
+            <img src={images.logoBookmark} alt="logo" />
+          </a>
+        </div>
+      )}
       <div className="navbar-desktop-links">
         <ul className="navbar-links">
           <a href="#features">
@@ -26,13 +39,11 @@ const Navbar = () => {
         </ul>
         <button className="login-button">Login</button>
       </div>
-      <div className="navbar-mobile-menu">
-        <img
-          src={images.iconHamburger}
-          alt="hamburger"
-          onClick={() => setToggleMenu(true)}
-        />
-      </div>
+      {display && (
+        <div className="navbar-mobile-menu">
+          <img src={images.iconHamburger} alt="hamburger" onClick={toggle} />
+        </div>
+      )}
       {toggleMenu && (
         <div className="navbar-mobile">
           <div className="navbar-mobile-logo">
@@ -43,17 +54,17 @@ const Navbar = () => {
               className="close-menu"
               src={images.iconClose}
               alt="close"
-              onClick={() => setToggleMenu(false)}
+              onClick={toggleBack}
             />
           </div>
           <ul className="navbar-mobile-links">
-            <a href="#features" onClick={() => setToggleMenu(false)}>
+            <a href="#features" onClick={toggleBack}>
               <li className="mobile-link">Features</li>
             </a>
-            <a href="#pricing" onClick={() => setToggleMenu(false)}>
+            <a href="#pricing" onClick={toggleBack}>
               <li className="mobile-link">Pricing</li>
             </a>
-            <a href="#contact" onClick={() => setToggleMenu(false)}>
+            <a href="#contact" onClick={toggleBack}>
               <li className="mobile-link">Contact</li>
             </a>
           </ul>
