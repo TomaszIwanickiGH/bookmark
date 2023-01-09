@@ -26,16 +26,19 @@ const browsers = [
     image: images.logoChrome,
     title: 'Add to Chrome',
     description: 'Minimum version 62',
+    marg: '-2rem',
   },
   {
     image: images.logoFirefox,
     title: 'Add to Firefox',
     description: 'Minimum version 55',
+    marg: '0',
   },
   {
     image: images.logoOpera,
     title: 'Add to Opera',
     description: 'Minimum version 46',
+    marg: '2rem',
   },
 ]
 
