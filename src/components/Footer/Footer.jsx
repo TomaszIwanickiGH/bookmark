@@ -7,12 +7,20 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-nav">
-        <img src={images.logoBookmarkMobile} alt="logo" />
+        <a href="#">
+          <img src={images.logoBookmarkMobile} alt="logo" />
+        </a>
         <div className="footer-links">
           <ul>
-            <li className="footer-link">features</li>
-            <li className="footer-link">pricing</li>
-            <li className="footer-link">contact</li>
+            <a href="#features">
+              <li className="footer-link">features</li>
+            </a>
+            <a href="#pricing">
+              <li className="footer-link">pricing</li>
+            </a>
+            <a href="#contact">
+              <li className="footer-link">contact</li>
+            </a>
           </ul>
         </div>
       </div>

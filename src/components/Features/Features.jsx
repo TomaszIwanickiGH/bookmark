@@ -15,7 +15,7 @@ const Features = () => {
   const [border, setBorder] = useState(1)
 
   return (
-    <div className="features">
+    <div className="features" id="features">
       <div className="features-header">
         <h2 className="features-heading">Features</h2>
         <p className="features-description">

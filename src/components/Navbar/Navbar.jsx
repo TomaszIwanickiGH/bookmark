@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="navbar" id="navbar">
       {display && (
         <div className="navbar-logo">
-          <a href="#navbar">
+          <a href="#">
             <img src={images.logoBookmark} alt="logo" />
           </a>
         </div>

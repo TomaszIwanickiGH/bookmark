@@ -7,7 +7,7 @@ import Browser from './Browser'
 
 const Browsers = () => {
   return (
-    <div className="browsers-container">
+    <div className="browsers-container" id="pricing">
       <div className="browsers-header">
         <h2 className="browsers-title">Download the extension</h2>
         <p className="browsers-description">

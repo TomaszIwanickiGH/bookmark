@@ -3,7 +3,7 @@ import './Newsletter.css'
 
 const Newsletter = () => {
   return (
-    <div className="newsletter">
+    <div className="newsletter" id="contact">
       <div className="newsletter-info">
         <p>
           <span>35,000+</span> already joined
