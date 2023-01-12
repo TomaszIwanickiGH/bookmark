@@ -31,7 +31,7 @@ const FAQ = () => {
               Voluptatem, voluptates quisquam!
             </div>
           ) : (
-            <div></div>
+            <div className="question-desc-flag"></div>
           )}
         </li>
         <li className="question-container">
@@ -50,7 +50,7 @@ const FAQ = () => {
               Voluptatem, voluptates quisquam!
             </div>
           ) : (
-            <div></div>
+            <div className="question-desc-flag"></div>
           )}
         </li>
         <li className="question-container">
@@ -69,7 +69,7 @@ const FAQ = () => {
               Voluptatem, voluptates quisquam!
             </div>
           ) : (
-            <div></div>
+            <div className="question-desc-flag"></div>
           )}
         </li>
         <li className="question-container">
@@ -88,7 +88,7 @@ const FAQ = () => {
               Voluptatem, voluptates quisquam!
             </div>
           ) : (
-            <div></div>
+            <div className="question-desc-flag"></div>
           )}
         </li>
       </ul>
