@@ -69,6 +69,11 @@
   margin: 1rem 0 2rem;
   line-height: 1.6em;
   color: var(--color-grayisch-blue);
+  transition: 0.3s ease;
+}
+
+.question-desc-flag {
+  transition: 0.3s ease;
 }
 
 .faq-button {
